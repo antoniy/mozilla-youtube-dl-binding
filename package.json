@@ -1,37 +1,40 @@
 {
-    "name": "mpv-youtube-dl-binding", 
-    "license": "MIT", 
-    "author": "Antoniy Chonkov", 
-    "version": "0.1.0-alpha.3",
-    "id": "jid1-6NrUw49Z9jFVxg@jetpack",
-    "description": "Watch flash videos from various sites using native player (like mpv) and youtube-dl.",
-    "homepage": "https://github.com/antoniy/mpv-youtube-dl-binding",
-    "icon": "data/icon_button.png",
-    "main": "lib/main.js",
-    "permissions": {
-        "private-browsing": true
+  "name": "mpv-youtube-dl-binding",
+  "license": "MIT",
+  "author": "Antoniy Chonkov",
+  "version": "0.1.0-alpha.3",
+  "id": "jid1-6NrUw49Z9jFVxg@jetpack",
+  "description": "Watch flash videos from various sites using native player (like mpv) and youtube-dl.",
+  "homepage": "https://github.com/antoniy/mpv-youtube-dl-binding",
+  "icon": "data/icon_button.png",
+  "main": "lib/main.js",
+  "permissions": {
+    "private-browsing": true
+  },
+  "preferences": [
+    {
+      "name": "player",
+      "title": "Native player location",
+      "description": "Specify native player executable full path",
+      "type": "string",
+      "value": "/usr/bin/mpv"
     },
-    "preferences": [
-        {
-            "name": "player",
-            "title": "Native player location",
-            "description": "Specify native player executable full path",
-            "type": "string",
-            "value": "/usr/bin/mpv"
-        },
-        {
-            "name": "hotkey",
-            "title": "Hotkey",
-            "description": "Specify hotkey binding to start the player for current page",
-            "type": "string",
-            "value": "accel-alt-m"
-        },
-        {
-            "name": "params",
-            "title": "Additional player parameters",
-            "description": "Specify additional parameters to pass the native player when started. Leave empty if none are required. Use %%url%% placeholder to be able to pass video link as a parameter (useful when using custom script to execute additional logic).",
-            "type": "string",
-            "value": ""
-        }
-    ]
+    {
+      "name": "hotkey",
+      "title": "Hotkey",
+      "description": "Specify hotkey binding to start the player for current page",
+      "type": "string",
+      "value": "accel-alt-m"
+    },
+    {
+      "name": "params",
+      "title": "Additional player parameters",
+      "description": "Specify additional parameters to pass the native player when started. Leave empty if none are required. Use %%url%% placeholder to be able to pass video link as a parameter (useful when using custom script to execute additional logic).",
+      "type": "string",
+      "value": ""
+    }
+  ],
+  "dependencies": {
+    "menuitem": "0.0.5"
+  }
 }
