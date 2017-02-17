@@ -19,6 +19,13 @@
             "type": "string",
             "value": "/usr/bin/mpv"
         },
+		{
+            "name": "ytdlBinary",
+            "title": "youtube-dl location",
+            "description": "Specify youtube-dl full path if not in PATH",
+            "type": "string",
+            "value": "youtube-dl"
+        },
         {
             "name": "hotkey",
             "title": "Hotkey",
@@ -47,5 +54,19 @@
             "type": "bool",
             "value": false
         },
+		{
+            "name": "downloadThenPlay",
+            "title": "Download before playing",
+            "description": "Download with youtube-dl before playing. Do not use youtube-dl's -o option.\nWindows: Requires Powershell to auto-play after download",
+            "type": "bool",
+            "value": true
+        },
+		{
+            "name": "downloadDirectory",
+            "title": "Download into this directory",
+            "description": "If 'Download before playing' is active, files will be downloaded into this directory.",
+            "type": "string",
+            "value": "/tmp/"
+        }
     ]
 }
