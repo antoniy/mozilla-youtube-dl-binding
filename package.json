@@ -47,5 +47,33 @@
             "type": "bool",
             "value": false
         },
+		{
+            "name": "downloadThenPlay",
+            "title": "Download before playing",
+            "description": "Download the video with youtube-dl before playing it with the specified media player.\nWindows: Requires Powershell to auto-play after download",
+            "type": "bool",
+            "value": false
+        },
+		{
+            "name": "ytdlBinary",
+            "title": "youtube-dl location",
+            "description": "Specify youtube-dl full path. \nOnly required if 'Download before playing' is active",
+            "type": "string",
+            "value": "youtube-dl"
+        },
+		{
+            "name": "ytdlParams",
+            "title": "youtube-dl parameters",
+            "description": "Specify parameters passed to youtube-dl. Parameters --output and --exec are automatically added if not specified here.\nOnly used if 'Download before playing' is active",
+            "type": "string",
+            "value": ""
+        },
+		{
+            "name": "downloadDirectory",
+            "title": "Download directory",
+            "description": "If 'Download before playing' is active, files will be downloaded into this directory.",
+            "type": "string",
+            "value": "/tmp/"
+        }
     ]
 }
