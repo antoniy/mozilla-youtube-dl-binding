@@ -46,6 +46,6 @@
             "description": "Launch player for a link on 'alt + click'",
             "type": "bool",
             "value": false
-        },
+        }
     ]
 }
