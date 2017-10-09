@@ -34,6 +34,19 @@
             "value": ""
         },
         {
+            "name": "snd_params",
+            "title": "Second additional player parameters",
+            "description": "Parameters for playing audio only (without video). Example: '--pause --cache-default=8192 --cache-file=PATH_TO_TEMP\audiotrack.m4a' ",
+            "type": "string",
+            "value": "--ytdl-format=251"
+        },
+        {
+            "name": "twitch_params",
+            "title": "Twitch settings",
+            "type": "string",
+            "value": "720p60"
+        },    
+        {
             "name": "ytStartPlAtIndex",
             "title": "Start playlist playback from the selected video",
             "description": "While in Youtube playlist, context menu command will play the playlist starting from the selected video.",
@@ -46,6 +59,6 @@
             "description": "Launch player for a link on 'alt + click'",
             "type": "bool",
             "value": false
-        },
+        }
     ]
 }
