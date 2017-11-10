@@ -2,7 +2,7 @@
     "name": "mpv-youtube-dl-binding",
     "license": "MIT",
     "author": "Antoniy Chonkov",
-    "version": "0.1.0-alpha.3",
+    "version": "0.1.0-alpha.2",
     "id": "jid1-6NrUw49Z9jFVxg@jetpack",
     "description": "Watch flash videos from various sites using native player (like mpv) and youtube-dl.",
     "homepage": "https://github.com/antoniy/mpv-youtube-dl-binding",
@@ -34,18 +34,12 @@
             "value": ""
         },
         {
-            "name": "snd_params",
+            "name": "secondParams",
             "title": "Second additional player parameters",
-            "description": "Parameters for playing audio only (without video). Example: '--pause --cache-default=8192 --cache-file=PATH_TO_TEMP\audiotrack.m4a' ",
+            "description": "Parameters for playing only soundtrack/music (without video)",
             "type": "string",
-            "value": "--ytdl-format=251"
+            "value": ""
         },
-        {
-            "name": "twitch_params",
-            "title": "Twitch settings",
-            "type": "string",
-            "value": "720p60"
-        },    
         {
             "name": "ytStartPlAtIndex",
             "title": "Start playlist playback from the selected video",
