@@ -1,0 +1,12 @@
+Good news! В youtube-dl 2017.09.24 (http://rg3.github.io/youtube-dl/) запилили поддержку твича. 
+Решил добавить в этот аддон отдельные настройки для него и аудио режима. Также накорябал пункт контекстного меню для саундтреков/музончика.
+WARNING: Не использовать на свой страх и риск. А вдруг взорвется?
+
+HINT#00: Чтобы не использовать SDK,
+
+    Просто берем архиватор,
+    Распаковываем mozilla-youtube-dl-binding.xpi/mpv-youtube-dl-binding.jetpack-0.1.0-alpha.2.xpi
+    Подменяем измененные файлы main.js and package.json
+    Архивируем в .zip
+    Открываем аддон в Firefox. Если у Вас браузер не для разработки (Nightly etc.) - в about:debugging загружаем файл с аддоном.
+    Выключаем в about:config проверку сертификатов: xpinstall.signatures.required -> false
