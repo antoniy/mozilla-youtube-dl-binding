@@ -2,7 +2,7 @@
     "name": "mpv-youtube-dl-binding",
     "license": "MIT",
     "author": "Antoniy Chonkov",
-    "version": "0.1.0-alpha.3",
+    "version": "0.1.0-alpha.2",
     "id": "jid1-6NrUw49Z9jFVxg@jetpack",
     "description": "Watch flash videos from various sites using native player (like mpv) and youtube-dl.",
     "homepage": "https://github.com/antoniy/mpv-youtube-dl-binding",
@@ -34,6 +34,13 @@
             "value": ""
         },
         {
+            "name": "secondParams",
+            "title": "Second additional player parameters",
+            "description": "Parameters for playing only soundtrack/music (without video)",
+            "type": "string",
+            "value": ""
+        },
+        {
             "name": "ytStartPlAtIndex",
             "title": "Start playlist playback from the selected video",
             "description": "While in Youtube playlist, context menu command will play the playlist starting from the selected video.",
@@ -46,6 +53,6 @@
             "description": "Launch player for a link on 'alt + click'",
             "type": "bool",
             "value": false
-        },
+        }
     ]
 }

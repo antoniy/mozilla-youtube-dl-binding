@@ -1,1 +1,4 @@
 *.xpi
+*.txt
+*.rdf
+bootstrap.js
