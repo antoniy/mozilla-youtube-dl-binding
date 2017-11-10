@@ -1,0 +1,13 @@
+Good news! In youtube-dl 2017.09.24 (http://rg3.github.io/youtube-dl/) added support for the twitch.
+I decided to add to this addon separate settings for him and the audio mode. Also added a context menu item for soundtracks / music and a menu section for stream quality settings.
+WARNING: Do not use at your own risk! And what if it explodes?
+
+HINT # 00: Сreating an addon without the SDK,
+    
+    Download original add-on (for example from a github.com;)
+    Just take the archiver (7zip etc.)
+    Unpack mozilla-youtube-dl-binding.xpi / mpv-youtube-dl-binding.jetpack-0.1.0-alpha.2.xpi
+    We replace the changed files main.js and package.json
+    Archive to the your_add-on_name.zip / your_add-on_name.xpi
+    Open the addon in Firefox. If you do not have a browser for development (Nightly etc.) - in the tab about: debugging we load the addon file.
+    Also, disable in tab about: config certificate validation: xpinstall.signatures.required -> set false
